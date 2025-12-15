@@ -19,6 +19,7 @@ public class FormController {
     @PostMapping("/start")
     public ResponseEntity<String> startFormProcess(@RequestBody FormStartRequest request) {
         String result = formService.startProcess(request);
+        System.out.println("system already ...");
         return ResponseEntity.ok(result);
     }
 }
