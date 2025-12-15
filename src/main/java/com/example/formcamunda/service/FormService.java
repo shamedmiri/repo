@@ -25,7 +25,7 @@ public class FormService {
 
         Map<String, Object> requestBody = new HashMap<>();
         requestBody.put("variables", request.getFormData());
-
+        System.out.println(request.toString());
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
 
