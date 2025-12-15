@@ -20,6 +20,7 @@ public class FormController {
     public ResponseEntity<String> startFormProcess(@RequestBody FormStartRequest request) {
         String result = formService.startProcess(request);
         System.out.println("system already ...");
+        System.out.println("system shutdown ...");
         return ResponseEntity.ok(result);
     }
 }
