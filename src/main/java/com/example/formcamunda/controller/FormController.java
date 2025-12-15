@@ -21,6 +21,7 @@ public class FormController {
         String result = formService.startProcess(request);
         System.out.println("system already ...");
         System.out.println("system shutdown ...");
+        System.out.println("system restarted ...");
         return ResponseEntity.ok(result);
     }
 }
